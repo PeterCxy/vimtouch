@@ -16,11 +16,18 @@ obj/
 
 # Local configuration file (sdk path, etc)
 local.properties
+**/project.properties
+**/*.swp
+**/build.xml
+**/.directory
+**/proguard-project.txt
 
 # Downloaded subprojects
 jni/libiconv/
 jni/libncurses/
 jni/vim/
+jni/vim*/
+jni/libiconv-*/
 
 # Vim session file
 vim-session
