@@ -1093,7 +1093,7 @@ public class VimTouch extends SlidingFragmentActivity implements
         if(actionbar == null){
             mTabSpinner.setVisibility(n>0?View.VISIBLE:View.GONE);
         }else{
-            actionbar.setNavigationMode(n>0?ActionBarCompat.NAVIGATION_MODE_LIST:ActionBarCompat.NAVIGATION_MODE_STANDARD);
+            actionbar.setNavigationMode(ActionBarCompat.NAVIGATION_MODE_LIST);
         }
     }
 

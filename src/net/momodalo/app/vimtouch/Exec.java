@@ -306,12 +306,12 @@ public class Exec
                         Log.d(TAG, "get "+str);
 
                         if(str.startsWith("SETCTAB:")){
-                            setCurTab(Integer.parseInt(str.substring(8)));
+                            setCurTab(Integer.parseInt(str.substring(8, 9)));
                         }else if (str.startsWith("SYNC   :")){
                             String[] array = str.substring(8).split(",");
                             syncVim(Integer.parseInt(array[0]),Integer.parseInt(array[1]),Integer.parseInt(array[2]));
                         }else if (str.startsWith("SHOWTAB:")){
-                            showTab(Integer.parseInt(str.substring(8)));
+                            showTab(Integer.parseInt(str.substring(8, 9)));
                         }else if (str.startsWith("SETLBLS:")){
                             setTabLabels(str.substring(8).split(","));
                         }else if (str.startsWith("SETCLIP:")){
