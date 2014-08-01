@@ -313,6 +313,13 @@ public class VimTouch extends SlidingFragmentActivity implements
             doToggleFullscreen();
         }
 
+        // Get Rid of ActionBar Icons
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+        getActionBar().setDisplayUseLogoEnabled(false);
+        getActionBar().setDisplayShowHomeEnabled(false);
+
+
         mUrl = getIntentUrl(getIntent());
 
         TSIntent = new Intent(this, VimTermService.class);
